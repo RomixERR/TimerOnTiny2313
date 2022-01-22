@@ -38,17 +38,22 @@ void setup() {
 
 // the loop function runs over and over again until power down or reset
 void loop() {
-	PeriodForSet();
-	PeriodForTime();
+	if (millis() - myTimer1 >= period1) {   // ищем разницу 
+		myTimer1 += period1;                  // сброс счётчика
+		// выполнить действие 1
+		PeriodForSet();
+	}
+	if (millis() - myTimer2 >= period2) {   // ищем разницу 
+		myTimer2 += period2;                  // сброс счётчика
+		// выполнить действие 2
+		//digitalWrite(RELE_PINOUT, !digitalRead(RELE_PINOUT)
+		PeriodForTime();
+	}
 }
 
 
 void PeriodForSet() {			//УСТАНОВОЧНЫЙ ЦИКЛИЧНЫЙ ПРОХОД
 	uint16_t ts;
-	if (millis() - myTimer1 >= period1) {   // ищем разницу 
-		myTimer1 += period1;                  // сброс счётчика
-		// выполнить действие 1
-		
 			if (countExit > 0) {
 				if (countExit != countExitDefault) {			 //отсчёт до пуска таймера
 					countExit--;
@@ -84,15 +89,9 @@ void PeriodForSet() {			//УСТАНОВОЧНЫЙ ЦИКЛИЧНЫЙ ПРОХОД
 				disp.point(true);
 
 			}
-		
-	}
 }
 
 void PeriodForTime() {			//РАБОЧИЙ ОТСЧЁТ ПРОХОД
-	if (millis() - myTimer2 >= period2) {   // ищем разницу 
-		myTimer2 += period2;                  // сброс счётчика
-					// выполнить действие 2
-					//digitalWrite(RELE_PINOUT, !digitalRead(RELE_PINOUT)
 		if (countExit == 0) {
 			if (flagPoint) {						//все действия только по миганию двоеточия (точки)
 				alarmCount = countAlarmDefault;     //
@@ -117,7 +116,7 @@ void PeriodForTime() {			//РАБОЧИЙ ОТСЧЁТ ПРОХОД
 			DisplayTime(timeLeft);	//отображение времени
 			disp.point(!flagPoint);	//отображение точек
 		}
-	}
+	
 }
 //void Display(uint16_t _Val)
 //{
