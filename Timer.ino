@@ -12,7 +12,7 @@
 #define CLK 4			//пин 7-ми сегментного индикатора
 #define DIO 5			//пин 7-ми сегментного индикатора
 #define AlarmDur 5		//Время работы звонка в секундах
-#define DelayOnStart 4 //Время задержки пуска (при вводе времени) в секундах
+#define DelayOnStart 40 //Время задержки пуска (при вводе времени) в секундах 4
 #define HalfTimePeriod 500 //500мС Половина секунды в миллисекундах (можно уменьшать для теста 100мС например)
 
 #pragma region MyRegion
@@ -809,30 +809,33 @@ void setup() {
 void loop() {
 
 	//if (millis() - myTimer1 >= period1) {   // ищем разницу 
-		myTimer1 += period1;                  // сброс счётчика
+		//myTimer1 += period1;                  // сброс счётчика
 		// выполнить действие 1
-		PeriodForSet();
+		//PeriodForSet();
 	//}
 	//if (millis() - myTimer2 >= period2) {   // ищем разницу 
-		myTimer2 += period2;                  // сброс счётчика
+		//myTimer2 += period2;                  // сброс счётчика
 		// выполнить действие 2
-		PeriodForTime();
+		//PeriodForTime();
 	//}
 }
 
 ISR(TIMER0_COMPA_vect) {
 	// ваш код
-	digitalWrite(RELE_PINOUT, !digitalRead(RELE_PINOUT));
+	flagIsPress = !flagIsPress;
+	digitalWrite(RELE_PINOUT, HIGH);
+	digitalWrite(ALARM_PINOUT, flagIsPress);
+	digitalWrite(RELE_PINOUT, LOW);
 }
 
 void InitialTIMER0() {
 	// Timer/Counter 0 initialization
-	//Частота прерываний будет = Fclk / (N * (1 + OCR0A))    где N - коэф. предделителя (1, 8, 64, 256 или 1024)
+	//Частота прерываний будет = Fclk / (2 * N * (1 + OCR0A)) / 2    где N - коэф. предделителя (1, 8, 64, 256 или 1024)
+	interrupts();
 	OCR0A = 124; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
-	TCCR0A = WGM01; //CTC (Сброс при совпадении)
-	TCCR0B = (0<<CS02) | (0<<CS00); // CLK/1024
-	TIMSK = (1 << OCIE0A);  // Разрешить прерывание по совпадению
-	
+	TCCR0A = (1<<WGM01); //CTC (Сброс при совпадении)
+	TCCR0B = (1<<CS02); // CLK/256
+	TIMSK = (1 << OCIE0A) | (1<<TOIE0);  // Разрешить прерывание по совпадению
 }
 
 void PeriodForSet() {			//УСТАНОВОЧНЫЙ ЦИКЛИЧНЫЙ ПРОХОД
