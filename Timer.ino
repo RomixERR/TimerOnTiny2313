@@ -14,8 +14,8 @@
 #define CLK 4			//пин 7-ми сегментного индикатора
 #define DIO 5			//пин 7-ми сегментного индикатора
 #define AlarmDur 5		//Время работы звонка в секундах
-#define DelayOnStart 40 //Время задержки пуска (при вводе времени) в секундах 4
-#define HalfTimePeriod 500 //500мС Половина секунды в миллисекундах (можно уменьшать для теста 100мС например)
+#define DelayOnStart 4 //Время задержки пуска (при вводе времени) в секундах 4
+#define HalfTimePeriod 5 //500мС Половина секунды в миллисекундах (можно уменьшать для теста 100мС например)
 
 #pragma region MyRegion
 
@@ -784,7 +784,7 @@
 
 //Операционная система реального времени (шутка) Реализация тактирования
 uint32_t myTimer1, myTimer2; 
-uint16_t period1 = 100, period2 = HalfTimePeriod/100, alarmCount, myPreDiv;
+uint16_t period1 = 100, period2 = HalfTimePeriod, alarmCount, myPreDiv= PREDIV;
 //Библиотека дисплея стартуем
 GyverTM1637 disp(CLK, DIO);
 //Всякие переменные
@@ -794,6 +794,7 @@ uint8_t const countAlarmDefault = AlarmDur * 1000 / period1;
 uint8_t countExit = countExitDefault;							//countExit == countExitDefault - условие входа (начала работы)
 bool flagIsPress, flagPoint = true;		//flagIsPress - флаг того что кнопка удерживается, flagPoint - двоеточие или точка на экране
 bool flagKey1Pressed, flagKey10Pressed;
+bool f;
 
 
 // the setup function runs once when you press reset or power the board
@@ -810,6 +811,8 @@ void setup() {
 // the loop function runs over and over again until power down or reset
 void loop() {
 
+
+
 	//if (millis() - myTimer1 >= period1) {   // ищем разницу 
 		//myTimer1 += period1;                  // сброс счётчика
 		// выполнить действие 1
@@ -825,19 +828,18 @@ void loop() {
 ISR(TIMER0_COMPA_vect) {
 	// ваш код
 	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
-	myPreDiv++;
-	if (myPreDiv >= PREDIV) {
+	myPreDiv--;
+	if (myPreDiv == 0) {
+		myPreDiv = PREDIV;
 		PeriodForSet();
 		period2--;
 		if (period2 == 0) {
-			period2 = HalfTimePeriod / 100;
+			period2 = HalfTimePeriod;
 			PeriodForTime();
+			/*f = !f;
+			digitalWrite(ALARM_PINOUT, f);*/
 		}
 	}
-	//flagIsPress = !flagIsPress;
-	//digitalWrite(RELE_PINOUT, HIGH);
-	//digitalWrite(ALARM_PINOUT, flagIsPress);
-	//digitalWrite(RELE_PINOUT, LOW);
 }
 
 void InitialTIMER0() {
