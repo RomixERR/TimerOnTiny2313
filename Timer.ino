@@ -5,6 +5,8 @@
 */
 #include <GyverTM1637.h>
 //#include "MyIncl2313.ino"
+#define OCR0ASET 249
+#define PREDIV 25
 #define KEY10_PIN 8		//КНОПКА УПРАВЛЕНИЯ ПОЛЁТОМ +10сек (от земли, поддяжка штанов к + уже реализована в коде)
 #define KEY1_PIN 9		//КНОПКА УПРАВЛЕНИЯ ПОЛЁТОМ +1сек (от земли, поддяжка штанов к + уже реализована в коде)
 #define RELE_PINOUT 13	//СИЛОВОЕ РЕЛЕ (просто выход)
@@ -782,7 +784,7 @@
 
 //Операционная система реального времени (шутка) Реализация тактирования
 uint32_t myTimer1, myTimer2; 
-uint16_t period1 = 100, period2 = HalfTimePeriod, alarmCount; 
+uint16_t period1 = 100, period2 = HalfTimePeriod/100, alarmCount, myPreDiv;
 //Библиотека дисплея стартуем
 GyverTM1637 disp(CLK, DIO);
 //Всякие переменные
@@ -822,20 +824,30 @@ void loop() {
 
 ISR(TIMER0_COMPA_vect) {
 	// ваш код
-	flagIsPress = !flagIsPress;
-	digitalWrite(RELE_PINOUT, HIGH);
-	digitalWrite(ALARM_PINOUT, flagIsPress);
-	digitalWrite(RELE_PINOUT, LOW);
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	myPreDiv++;
+	if (myPreDiv >= PREDIV) {
+		PeriodForSet();
+		period2--;
+		if (period2 == 0) {
+			period2 = HalfTimePeriod / 100;
+			PeriodForTime();
+		}
+	}
+	//flagIsPress = !flagIsPress;
+	//digitalWrite(RELE_PINOUT, HIGH);
+	//digitalWrite(ALARM_PINOUT, flagIsPress);
+	//digitalWrite(RELE_PINOUT, LOW);
 }
 
 void InitialTIMER0() {
 	// Timer/Counter 0 initialization
 	//Частота прерываний будет = Fclk / (2 * N * (1 + OCR0A)) / 2    где N - коэф. предделителя (1, 8, 64, 256 или 1024)
 	interrupts();
-	OCR0A = 124; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. ОБНОВИ В ISR(TIMER0_COMPA_vect)
 	TCCR0A = (1<<WGM01); //CTC (Сброс при совпадении)
 	TCCR0B = (1<<CS02); // CLK/256
-	TIMSK = (1 << OCIE0A) | (1<<TOIE0);  // Разрешить прерывание по совпадению
+	TIMSK =  (1 << OCIE0A);  // Разрешить прерывание по совпадению
 }
 
 void PeriodForSet() {			//УСТАНОВОЧНЫЙ ЦИКЛИЧНЫЙ ПРОХОД
