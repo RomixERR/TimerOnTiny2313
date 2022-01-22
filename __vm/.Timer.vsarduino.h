@@ -16,6 +16,7 @@
 #define __AVR_attiny2313a__
 #define __AVR_ATTINY2313A__
 #define __AVR_ATtiny2313a__
+#define _VMDEBUG 1
 #define F_CPU 16000000L
 #define CLOCK_SOURCE 1
 #define ARDUINO 108013
@@ -92,6 +93,5 @@ typedef void *__builtin_va_list;
 #define pgm_read_ptr(address_short)   short()
 
 #include "Timer.ino"
-#include "MyIncl2313.ino"
 #endif
 #endif
