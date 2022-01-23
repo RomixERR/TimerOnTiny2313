@@ -1,0 +1,1931 @@
+
+C:\Users\RomixERR\AppData\Local\Temp\VMBuilds\Timer\ATTinyCore_attinyx313\Debug/Timer.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	3f c0       	rjmp	.+126    	; 0x80 <__ctors_end>
+   2:	61 c0       	rjmp	.+194    	; 0xc6 <__bad_interrupt>
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	5f c0       	rjmp	.+190    	; 0xc6 <__bad_interrupt>
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	5d c0       	rjmp	.+186    	; 0xc6 <__bad_interrupt>
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	5b c0       	rjmp	.+182    	; 0xc6 <__bad_interrupt>
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	59 c0       	rjmp	.+178    	; 0xc6 <__bad_interrupt>
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	57 c0       	rjmp	.+174    	; 0xc6 <__bad_interrupt>
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	2c c2       	rjmp	.+1112   	; 0x474 <__vector_13>
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	53 c0       	rjmp	.+166    	; 0xc6 <__bad_interrupt>
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	51 c0       	rjmp	.+162    	; 0xc6 <__bad_interrupt>
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	4f c0       	rjmp	.+158    	; 0xc6 <__bad_interrupt>
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+
+0000002a <__trampolines_end>:
+__trampolines_start():
+  2a:	00 00       	nop
+  2c:	3a 00       	.word	0x003a	; ????
+  2e:	37 00       	.word	0x0037	; ????
+  30:	00 00       	nop
+  32:	31 00       	.word	0x0031	; ????
+
+00000034 <port_to_output_PGM>:
+  34:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+0000003e <digital_pin_to_timer_PGM>:
+  3e:	00 00 00 00 00 00 00 02 00 00 00 01 03 04 00 00     ................
+	...
+
+00000050 <port_to_input_PGM>:
+  50:	00 00 39 00 36 00 00 00 30 00                       ..9.6...0.
+
+0000005a <digital_pin_to_port_PGM>:
+  5a:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  6a:	02 01                                               ..
+
+0000006c <digital_pin_to_bit_mask_PGM>:
+  6c:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  7c:	80 04                                               ..
+
+0000007e <__ctors_start>:
+__ctors_start():
+  7e:	8a 03       	fmulsu	r16, r18
+
+00000080 <__ctors_end>:
+__dtors_end():
+  80:	11 24       	eor	r1, r1
+  82:	1f be       	out	0x3f, r1	; 63
+  84:	cf ed       	ldi	r28, 0xDF	; 223
+  86:	cd bf       	out	0x3d, r28	; 61
+
+00000088 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  88:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  8a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  8c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  8e:	e0 ea       	ldi	r30, 0xA0	; 160
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  90:	f7 e0       	ldi	r31, 0x07	; 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  92:	02 c0       	rjmp	.+4      	; 0x98 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  94:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  96:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  98:	a2 37       	cpi	r26, 0x72	; 114
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  9a:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  9c:	d9 f7       	brne	.-10     	; 0x94 <__do_copy_data+0xc>
+
+0000009e <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  9e:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  a0:	a2 e7       	ldi	r26, 0x72	; 114
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  a2:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  a4:	01 c0       	rjmp	.+2      	; 0xa8 <.do_clear_bss_start>
+
+000000a6 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  a6:	1d 92       	st	X+, r1
+
+000000a8 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  a8:	a6 38       	cpi	r26, 0x86	; 134
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  aa:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  ac:	e1 f7       	brne	.-8      	; 0xa6 <.do_clear_bss_loop>
+
+000000ae <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  ae:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  b0:	c0 e4       	ldi	r28, 0x40	; 64
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  b2:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  b4:	03 c0       	rjmp	.+6      	; 0xbc <__do_global_ctors+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  b6:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  b8:	fe 01       	movw	r30, r28
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  ba:	6a d3       	rcall	.+1748   	; 0x790 <__tablejump2__>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  bc:	cf 33       	cpi	r28, 0x3F	; 63
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  be:	d1 07       	cpc	r29, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+  c0:	d1 f7       	brne	.-12     	; 0xb6 <__do_global_ctors+0x8>
+  c2:	f2 d2       	rcall	.+1508   	; 0x6a8 <main>
+  c4:	6b c3       	rjmp	.+1750   	; 0x79c <_exit>
+
+000000c6 <__bad_interrupt>:
+__vector_1():
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <digitalRead>:
+digitalRead():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:167
+  }
+}
+
+int digitalRead(uint8_t pin)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  c8:	87 fd       	sbrc	r24, 7
+  ca:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:169
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  cc:	90 e0       	ldi	r25, 0x00	; 0
+  ce:	fc 01       	movw	r30, r24
+  d0:	e4 59       	subi	r30, 0x94	; 148
+  d2:	ff 4f       	sbci	r31, 0xFF	; 255
+  d4:	24 91       	lpm	r18, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:170
+  uint8_t port = digitalPinToPort(pin);
+  d6:	fc 01       	movw	r30, r24
+  d8:	e6 5a       	subi	r30, 0xA6	; 166
+  da:	ff 4f       	sbci	r31, 0xFF	; 255
+  dc:	e4 91       	lpm	r30, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:172
+
+  if (port == NOT_A_PIN) return LOW;
+  de:	ee 23       	and	r30, r30
+  e0:	71 f0       	breq	.+28     	; 0xfe <__stack+0x1f>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:180
+  // "read" should *NEVER* change the behavior of the thing you're using it on.
+  // That's why it's called "read" not "write". As an added bonus, sets the
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  e2:	f0 e0       	ldi	r31, 0x00	; 0
+  e4:	ee 0f       	add	r30, r30
+  e6:	ff 1f       	adc	r31, r31
+  e8:	e0 5b       	subi	r30, 0xB0	; 176
+  ea:	ff 4f       	sbci	r31, 0xFF	; 255
+  ec:	a5 91       	lpm	r26, Z+
+  ee:	b4 91       	lpm	r27, Z
+  f0:	ec 91       	ld	r30, X
+  f2:	e2 23       	and	r30, r18
+  f4:	81 e0       	ldi	r24, 0x01	; 1
+  f6:	90 e0       	ldi	r25, 0x00	; 0
+  f8:	21 f4       	brne	.+8      	; 0x102 <__stack+0x23>
+  fa:	80 e0       	ldi	r24, 0x00	; 0
+  fc:	08 95       	ret
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:172
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+  fe:	80 e0       	ldi	r24, 0x00	; 0
+ 100:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:182
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  return LOW;
+}
+ 102:	08 95       	ret
+
+00000104 <digitalWrite>:
+digitalWrite():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:138
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 104:	87 fd       	sbrc	r24, 7
+ 106:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:139
+  uint8_t timer = digitalPinToTimer(pin);
+ 108:	90 e0       	ldi	r25, 0x00	; 0
+ 10a:	fc 01       	movw	r30, r24
+ 10c:	e2 5c       	subi	r30, 0xC2	; 194
+ 10e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 110:	34 91       	lpm	r19, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 112:	fc 01       	movw	r30, r24
+ 114:	e4 59       	subi	r30, 0x94	; 148
+ 116:	ff 4f       	sbci	r31, 0xFF	; 255
+ 118:	24 91       	lpm	r18, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 11a:	fc 01       	movw	r30, r24
+ 11c:	e6 5a       	subi	r30, 0xA6	; 166
+ 11e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 120:	e4 91       	lpm	r30, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 122:	ee 23       	and	r30, r30
+ 124:	b9 f0       	breq	.+46     	; 0x154 <digitalWrite+0x50>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 126:	33 23       	and	r19, r19
+ 128:	29 f0       	breq	.+10     	; 0x134 <digitalWrite+0x30>
+turnOffPWM():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+    if( timer == TIMER0A){
+ 12a:	31 30       	cpi	r19, 0x01	; 1
+ 12c:	a1 f4       	brne	.+40     	; 0x156 <digitalWrite+0x52>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:68
+      cbi(TCCR0A, COM0A1);
+ 12e:	80 b7       	in	r24, 0x30	; 48
+ 130:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:74
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+      cbi(TCCR0A, COM0B1);
+ 132:	80 bf       	out	0x30, r24	; 48
+digitalWrite():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 134:	f0 e0       	ldi	r31, 0x00	; 0
+ 136:	ee 0f       	add	r30, r30
+ 138:	ff 1f       	adc	r31, r31
+ 13a:	ec 5c       	subi	r30, 0xCC	; 204
+ 13c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 13e:	a5 91       	lpm	r26, Z+
+ 140:	b4 91       	lpm	r27, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+ 142:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+ 144:	61 11       	cpse	r22, r1
+ 146:	17 c0       	rjmp	.+46     	; 0x176 <digitalWrite+0x72>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:154
+    uint8_t oldSREG = SREG;
+    cli();
+ 148:	f8 94       	cli
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 14a:	ec 91       	ld	r30, X
+ 14c:	20 95       	com	r18
+ 14e:	2e 23       	and	r18, r30
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+ 150:	2c 93       	st	X, r18
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 152:	8f bf       	out	0x3f, r24	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:163
+  }
+}
+ 154:	08 95       	ret
+turnOffPWM():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:73
+      cbi(TCCR0A, COM0A1);
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+ 156:	32 30       	cpi	r19, 0x02	; 2
+ 158:	19 f4       	brne	.+6      	; 0x160 <digitalWrite+0x5c>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:74
+      cbi(TCCR0A, COM0B1);
+ 15a:	80 b7       	in	r24, 0x30	; 48
+ 15c:	8f 7d       	andi	r24, 0xDF	; 223
+ 15e:	e9 cf       	rjmp	.-46     	; 0x132 <digitalWrite+0x2e>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:118
+        GTCCR &= ~(1<<COM1B1);
+        //cbi(GTCCR, COM1B1);
+      } else
+    #endif
+    #if defined(TCCR1A) && defined(COM1A1) // civilized parts
+      if( timer == TIMER1A){
+ 160:	33 30       	cpi	r19, 0x03	; 3
+ 162:	21 f4       	brne	.+8      	; 0x16c <digitalWrite+0x68>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:119
+        TCCR1A &= ~(1<<COM1A1);
+ 164:	8f b5       	in	r24, 0x2f	; 47
+ 166:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:126
+      } else
+    #endif
+
+    #if defined(TCCR1A) && defined(COM1B1) // civilized parts
+      if( timer == TIMER1B){
+        TCCR1A &= ~(1<<COM1B1);
+ 168:	8f bd       	out	0x2f, r24	; 47
+ 16a:	e4 cf       	rjmp	.-56     	; 0x134 <digitalWrite+0x30>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:125
+        //cbi(TCCR1A, COM1A0);
+      } else
+    #endif
+
+    #if defined(TCCR1A) && defined(COM1B1) // civilized parts
+      if( timer == TIMER1B){
+ 16c:	34 30       	cpi	r19, 0x04	; 4
+ 16e:	11 f7       	brne	.-60     	; 0x134 <digitalWrite+0x30>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:126
+        TCCR1A &= ~(1<<COM1B1);
+ 170:	8f b5       	in	r24, 0x2f	; 47
+ 172:	8f 7d       	andi	r24, 0xDF	; 223
+ 174:	f9 cf       	rjmp	.-14     	; 0x168 <digitalWrite+0x64>
+digitalWrite():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:159
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+ 176:	f8 94       	cli
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 178:	ec 91       	ld	r30, X
+ 17a:	2e 2b       	or	r18, r30
+ 17c:	e9 cf       	rjmp	.-46     	; 0x150 <digitalWrite+0x4c>
+
+0000017e <GyverTM1637::stop() [clone .constprop.14]>:
+_ZN11GyverTM16374stopEv.constprop.14():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:59
+    digitalWrite(Datapin, HIGH);
+    digitalWrite(Datapin, LOW);
+    digitalWrite(Clkpin, LOW);
+}
+//End of transmission
+void GyverTM1637::stop(void)
+ 17e:	cf 93       	push	r28
+ 180:	df 93       	push	r29
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:61
+{
+    digitalWrite(Clkpin, LOW);
+ 182:	cc e7       	ldi	r28, 0x7C	; 124
+ 184:	d0 e0       	ldi	r29, 0x00	; 0
+ 186:	60 e0       	ldi	r22, 0x00	; 0
+ 188:	88 85       	ldd	r24, Y+8	; 0x08
+ 18a:	bc df       	rcall	.-136    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:62
+    digitalWrite(Datapin, LOW);
+ 18c:	60 e0       	ldi	r22, 0x00	; 0
+ 18e:	89 85       	ldd	r24, Y+9	; 0x09
+ 190:	b9 df       	rcall	.-142    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:63
+    digitalWrite(Clkpin, HIGH);
+ 192:	61 e0       	ldi	r22, 0x01	; 1
+ 194:	88 85       	ldd	r24, Y+8	; 0x08
+ 196:	b6 df       	rcall	.-148    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:64
+    digitalWrite(Datapin, HIGH);
+ 198:	61 e0       	ldi	r22, 0x01	; 1
+ 19a:	89 85       	ldd	r24, Y+9	; 0x09
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:65
+}
+ 19c:	df 91       	pop	r29
+ 19e:	cf 91       	pop	r28
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:64
+void GyverTM1637::stop(void)
+{
+    digitalWrite(Clkpin, LOW);
+    digitalWrite(Datapin, LOW);
+    digitalWrite(Clkpin, HIGH);
+    digitalWrite(Datapin, HIGH);
+ 1a0:	b1 cf       	rjmp	.-158    	; 0x104 <digitalWrite>
+
+000001a2 <GyverTM1637::start() [clone .constprop.10]>:
+_ZN11GyverTM16375startEv.constprop.10():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:51
+    delayMicroseconds(50);
+
+    return ack;
+}
+//send start signal to GyverTM1637
+void GyverTM1637::start(void)
+ 1a2:	cf 93       	push	r28
+ 1a4:	df 93       	push	r29
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:53
+{
+    digitalWrite(Clkpin, HIGH); //send start signal to GyverTM1637
+ 1a6:	cc e7       	ldi	r28, 0x7C	; 124
+ 1a8:	d0 e0       	ldi	r29, 0x00	; 0
+ 1aa:	61 e0       	ldi	r22, 0x01	; 1
+ 1ac:	88 85       	ldd	r24, Y+8	; 0x08
+ 1ae:	aa df       	rcall	.-172    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:54
+    digitalWrite(Datapin, HIGH);
+ 1b0:	61 e0       	ldi	r22, 0x01	; 1
+ 1b2:	89 85       	ldd	r24, Y+9	; 0x09
+ 1b4:	a7 df       	rcall	.-178    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:55
+    digitalWrite(Datapin, LOW);
+ 1b6:	60 e0       	ldi	r22, 0x00	; 0
+ 1b8:	89 85       	ldd	r24, Y+9	; 0x09
+ 1ba:	a4 df       	rcall	.-184    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:56
+    digitalWrite(Clkpin, LOW);
+ 1bc:	60 e0       	ldi	r22, 0x00	; 0
+ 1be:	88 85       	ldd	r24, Y+8	; 0x08
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:57
+}
+ 1c0:	df 91       	pop	r29
+ 1c2:	cf 91       	pop	r28
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:56
+void GyverTM1637::start(void)
+{
+    digitalWrite(Clkpin, HIGH); //send start signal to GyverTM1637
+    digitalWrite(Datapin, HIGH);
+    digitalWrite(Datapin, LOW);
+    digitalWrite(Clkpin, LOW);
+ 1c4:	9f cf       	rjmp	.-194    	; 0x104 <digitalWrite>
+
+000001c6 <pinMode>:
+pinMode():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 1c6:	cf 93       	push	r28
+ 1c8:	df 93       	push	r29
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 1ca:	87 fd       	sbrc	r24, 7
+ 1cc:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+ 1ce:	90 e0       	ldi	r25, 0x00	; 0
+ 1d0:	fc 01       	movw	r30, r24
+ 1d2:	e4 59       	subi	r30, 0x94	; 148
+ 1d4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1d6:	24 91       	lpm	r18, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 1d8:	86 5a       	subi	r24, 0xA6	; 166
+ 1da:	9f 4f       	sbci	r25, 0xFF	; 255
+ 1dc:	fc 01       	movw	r30, r24
+ 1de:	84 91       	lpm	r24, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 1e0:	88 23       	and	r24, r24
+ 1e2:	c9 f0       	breq	.+50     	; 0x216 <pinMode+0x50>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 1e4:	90 e0       	ldi	r25, 0x00	; 0
+ 1e6:	88 0f       	add	r24, r24
+ 1e8:	99 1f       	adc	r25, r25
+ 1ea:	fc 01       	movw	r30, r24
+ 1ec:	e6 5d       	subi	r30, 0xD6	; 214
+ 1ee:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1f0:	a5 91       	lpm	r26, Z+
+ 1f2:	b4 91       	lpm	r27, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 1f4:	fc 01       	movw	r30, r24
+ 1f6:	ec 5c       	subi	r30, 0xCC	; 204
+ 1f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1fa:	c5 91       	lpm	r28, Z+
+ 1fc:	d4 91       	lpm	r29, Z
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+ 1fe:	61 11       	cpse	r22, r1
+ 200:	0d c0       	rjmp	.+26     	; 0x21c <pinMode+0x56>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+ 202:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 204:	f8 94       	cli
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 206:	8c 91       	ld	r24, X
+ 208:	20 95       	com	r18
+ 20a:	82 23       	and	r24, r18
+ 20c:	8c 93       	st	X, r24
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 20e:	88 81       	ld	r24, Y
+ 210:	28 23       	and	r18, r24
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:54
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+ 212:	28 83       	st	Y, r18
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:55
+    SREG = oldSREG;
+ 214:	9f bf       	out	0x3f, r25	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 216:	df 91       	pop	r29
+ 218:	cf 91       	pop	r28
+ 21a:	08 95       	ret
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:50
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 21c:	62 30       	cpi	r22, 0x02	; 2
+ 21e:	51 f4       	brne	.+20     	; 0x234 <pinMode+0x6e>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:51
+    uint8_t oldSREG = SREG;
+ 220:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:52
+                cli();
+ 222:	f8 94       	cli
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:53
+    *reg &= ~bit;
+ 224:	3c 91       	ld	r19, X
+ 226:	82 2f       	mov	r24, r18
+ 228:	80 95       	com	r24
+ 22a:	83 23       	and	r24, r19
+ 22c:	8c 93       	st	X, r24
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:54
+    *out |= bit;
+ 22e:	e8 81       	ld	r30, Y
+ 230:	2e 2b       	or	r18, r30
+ 232:	ef cf       	rjmp	.-34     	; 0x212 <pinMode+0x4c>
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:57
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 234:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:58
+                cli();
+ 236:	f8 94       	cli
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 238:	ec 91       	ld	r30, X
+ 23a:	2e 2b       	or	r18, r30
+ 23c:	2c 93       	st	X, r18
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 23e:	8f bf       	out	0x3f, r24	; 63
+ 240:	ea cf       	rjmp	.-44     	; 0x216 <pinMode+0x50>
+
+00000242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>:
+_ZN11GyverTM16379writeByteEa.constprop.11():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:20
+
+uint8_t digToHEX(uint8_t digit) {
+    return digitHEX[digit];
+}
+
+int GyverTM1637::writeByte(int8_t wr_data)
+ 242:	0f 93       	push	r16
+ 244:	1f 93       	push	r17
+ 246:	cf 93       	push	r28
+ 248:	df 93       	push	r29
+ 24a:	d8 2f       	mov	r29, r24
+ 24c:	c8 e0       	ldi	r28, 0x08	; 8
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:25
+{
+    uint8_t i, count1;
+    for (i = 0; i < 8; i++) //sent 8bit data
+    {
+        digitalWrite(Clkpin, LOW);
+ 24e:	60 e0       	ldi	r22, 0x00	; 0
+ 250:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <disp+0x8>
+ 254:	57 df       	rcall	.-338    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:26
+        if (wr_data & 0x01)digitalWrite(Datapin, HIGH); //LSB first
+ 256:	0d 2f       	mov	r16, r29
+ 258:	0d 2e       	mov	r0, r29
+ 25a:	00 0c       	add	r0, r0
+ 25c:	11 0b       	sbc	r17, r17
+ 25e:	61 e0       	ldi	r22, 0x01	; 1
+ 260:	d0 ff       	sbrs	r29, 0
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:27
+        else digitalWrite(Datapin, LOW);
+ 262:	60 e0       	ldi	r22, 0x00	; 0
+ 264:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 268:	4d df       	rcall	.-358    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:28
+        wr_data >>= 1;
+ 26a:	15 95       	asr	r17
+ 26c:	07 95       	ror	r16
+ 26e:	d0 2f       	mov	r29, r16
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:29
+        digitalWrite(Clkpin, HIGH);
+ 270:	61 e0       	ldi	r22, 0x01	; 1
+ 272:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <disp+0x8>
+ 276:	46 df       	rcall	.-372    	; 0x104 <digitalWrite>
+ 278:	c1 50       	subi	r28, 0x01	; 1
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:23
+}
+
+int GyverTM1637::writeByte(int8_t wr_data)
+{
+    uint8_t i, count1;
+    for (i = 0; i < 8; i++) //sent 8bit data
+ 27a:	49 f7       	brne	.-46     	; 0x24e <GyverTM1637::writeByte(signed char) [clone .constprop.11]+0xc>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:32
+        else digitalWrite(Datapin, LOW);
+        wr_data >>= 1;
+        digitalWrite(Clkpin, HIGH);
+
+    }
+    digitalWrite(Clkpin, LOW); //wait for the ACK
+ 27c:	60 e0       	ldi	r22, 0x00	; 0
+ 27e:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <disp+0x8>
+ 282:	40 df       	rcall	.-384    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:33
+    digitalWrite(Datapin, HIGH);
+ 284:	61 e0       	ldi	r22, 0x01	; 1
+ 286:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 28a:	3c df       	rcall	.-392    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:34
+    digitalWrite(Clkpin, HIGH);
+ 28c:	61 e0       	ldi	r22, 0x01	; 1
+ 28e:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <disp+0x8>
+ 292:	38 df       	rcall	.-400    	; 0x104 <digitalWrite>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:35
+    pinMode(Datapin, INPUT);
+ 294:	60 e0       	ldi	r22, 0x00	; 0
+ 296:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 29a:	95 df       	rcall	.-214    	; 0x1c6 <pinMode>
+delayMicroseconds():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:833
+    // us is at least 4, divided by 4 gives us 1 (no zero delay bug)
+    us >>= 2; // us div 4, = 4 cycles
+  #endif
+
+  // busy wait
+  __asm__ __volatile__ (
+ 29c:	83 ec       	ldi	r24, 0xC3	; 195
+ 29e:	90 e0       	ldi	r25, 0x00	; 0
+ 2a0:	01 97       	sbiw	r24, 0x01	; 1
+ 2a2:	f1 f7       	brne	.-4      	; 0x2a0 <GyverTM1637::writeByte(signed char) [clone .constprop.11]+0x5e>
+_ZN11GyverTM16379writeByteEa.constprop.11():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:38
+
+    delayMicroseconds(50);
+    uint8_t ack = digitalRead(Datapin);
+ 2a4:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 2a8:	0f df       	rcall	.-482    	; 0xc8 <digitalRead>
+ 2aa:	8c 01       	movw	r16, r24
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:39
+    if (ack == 0)
+ 2ac:	81 11       	cpse	r24, r1
+ 2ae:	08 c0       	rjmp	.+16     	; 0x2c0 <GyverTM1637::writeByte(signed char) [clone .constprop.11]+0x7e>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:41
+    {
+        pinMode(Datapin, OUTPUT);
+ 2b0:	61 e0       	ldi	r22, 0x01	; 1
+ 2b2:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 2b6:	87 df       	rcall	.-242    	; 0x1c6 <pinMode>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:42
+        digitalWrite(Datapin, LOW);
+ 2b8:	60 e0       	ldi	r22, 0x00	; 0
+ 2ba:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 2be:	22 df       	rcall	.-444    	; 0x104 <digitalWrite>
+delayMicroseconds():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:833
+ 2c0:	c3 ec       	ldi	r28, 0xC3	; 195
+ 2c2:	d0 e0       	ldi	r29, 0x00	; 0
+ 2c4:	ce 01       	movw	r24, r28
+ 2c6:	01 97       	sbiw	r24, 0x01	; 1
+ 2c8:	f1 f7       	brne	.-4      	; 0x2c6 <GyverTM1637::writeByte(signed char) [clone .constprop.11]+0x84>
+_ZN11GyverTM16379writeByteEa.constprop.11():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:45
+    }
+    delayMicroseconds(50);
+    pinMode(Datapin, OUTPUT);
+ 2ca:	61 e0       	ldi	r22, 0x01	; 1
+ 2cc:	80 91 85 00 	lds	r24, 0x0085	; 0x800085 <disp+0x9>
+ 2d0:	7a df       	rcall	.-268    	; 0x1c6 <pinMode>
+delayMicroseconds():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:833
+ 2d2:	21 97       	sbiw	r28, 0x01	; 1
+ 2d4:	f1 f7       	brne	.-4      	; 0x2d2 <GyverTM1637::writeByte(signed char) [clone .constprop.11]+0x90>
+_ZN11GyverTM16379writeByteEa.constprop.11():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:49
+    delayMicroseconds(50);
+
+    return ack;
+}
+ 2d6:	c8 01       	movw	r24, r16
+ 2d8:	99 27       	eor	r25, r25
+ 2da:	df 91       	pop	r29
+ 2dc:	cf 91       	pop	r28
+ 2de:	1f 91       	pop	r17
+ 2e0:	0f 91       	pop	r16
+ 2e2:	08 95       	ret
+
+000002e4 <GyverTM1637::sendArray(unsigned char*) [clone .constprop.9]>:
+_ZN11GyverTM16379sendArrayEPh.constprop.9():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:133
+    start();          //
+    writeByte(Cmd_DispCtrl);//
+    stop();           //
+}
+
+void GyverTM1637::sendArray(uint8_t sendData[]) {
+ 2e4:	0f 93       	push	r16
+ 2e6:	1f 93       	push	r17
+ 2e8:	cf 93       	push	r28
+ 2ea:	df 93       	push	r29
+ 2ec:	8c 01       	movw	r16, r24
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:134
+    start();          //start signal sent to GyverTM1637 from MCU
+ 2ee:	59 df       	rcall	.-334    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:135
+    writeByte(ADDR_AUTO);//
+ 2f0:	80 e4       	ldi	r24, 0x40	; 64
+ 2f2:	a7 df       	rcall	.-178    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:136
+    stop();           //
+ 2f4:	44 df       	rcall	.-376    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:137
+    start();          //
+ 2f6:	55 df       	rcall	.-342    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:138
+    writeByte(Cmd_SetAddr);//
+ 2f8:	80 91 81 00 	lds	r24, 0x0081	; 0x800081 <disp+0x5>
+ 2fc:	a2 df       	rcall	.-188    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+ 2fe:	e8 01       	movw	r28, r16
+ 300:	0c 5f       	subi	r16, 0xFC	; 252
+ 302:	1f 4f       	sbci	r17, 0xFF	; 255
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:140
+    for (byte i = 0; i < 4; i ++) {
+        writeByte(sendData[i]);        //
+ 304:	89 91       	ld	r24, Y+
+ 306:	9d df       	rcall	.-198    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:139
+    start();          //start signal sent to GyverTM1637 from MCU
+    writeByte(ADDR_AUTO);//
+    stop();           //
+    start();          //
+    writeByte(Cmd_SetAddr);//
+    for (byte i = 0; i < 4; i ++) {
+ 308:	c0 17       	cp	r28, r16
+ 30a:	d1 07       	cpc	r29, r17
+ 30c:	d9 f7       	brne	.-10     	; 0x304 <GyverTM1637::sendArray(unsigned char*) [clone .constprop.9]+0x20>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:142
+        writeByte(sendData[i]);        //
+    }
+    stop();           //
+ 30e:	37 df       	rcall	.-402    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:143
+    start();          //
+ 310:	48 df       	rcall	.-368    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:144
+    writeByte(Cmd_DispCtrl);//
+ 312:	80 91 82 00 	lds	r24, 0x0082	; 0x800082 <disp+0x6>
+ 316:	95 df       	rcall	.-214    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:146
+    stop();           //
+}
+ 318:	df 91       	pop	r29
+ 31a:	cf 91       	pop	r28
+ 31c:	1f 91       	pop	r17
+ 31e:	0f 91       	pop	r16
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:145
+        writeByte(sendData[i]);        //
+    }
+    stop();           //
+    start();          //
+    writeByte(Cmd_DispCtrl);//
+    stop();           //
+ 320:	2e cf       	rjmp	.-420    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+
+00000322 <GyverTM1637::displayByte(unsigned char*) [clone .constprop.8]>:
+_ZN11GyverTM163711displayByteEPh.constprop.8():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:81
+        SegData[i] = digitHEX[DispData[i]] + PointData;
+        //}
+    }
+    sendArray(SegData);
+}
+void GyverTM1637::displayByte(uint8_t DispData[])
+ 322:	ef 92       	push	r14
+ 324:	ff 92       	push	r15
+ 326:	0f 93       	push	r16
+ 328:	1f 93       	push	r17
+ 32a:	cf 93       	push	r28
+ 32c:	df 93       	push	r29
+ 32e:	cd b7       	in	r28, 0x3d	; 61
+ 330:	dd 27       	eor	r29, r29
+ 332:	c4 50       	subi	r28, 0x04	; 4
+ 334:	cd bf       	out	0x3d, r28	; 61
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:89
+    for (byte i = 0; i < 4; i ++) {
+        //if (DispData[i] == 0x7f) SegData[i] = 0x00;
+        //else SegData[i] = DispData[i];
+        //{
+        lastData[i] = DispData[i];
+        SegData[i] = DispData[i] + PointData;
+ 336:	30 91 83 00 	lds	r19, 0x0083	; 0x800083 <disp+0x7>
+ 33a:	fc 01       	movw	r30, r24
+ 33c:	4c e7       	ldi	r20, 0x7C	; 124
+ 33e:	50 e0       	ldi	r21, 0x00	; 0
+ 340:	ce 01       	movw	r24, r28
+ 342:	01 96       	adiw	r24, 0x01	; 1
+ 344:	7c 01       	movw	r14, r24
+ 346:	bf 01       	movw	r22, r30
+ 348:	6c 5f       	subi	r22, 0xFC	; 252
+ 34a:	7f 4f       	sbci	r23, 0xFF	; 255
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:88
+    uint8_t SegData[4];
+    for (byte i = 0; i < 4; i ++) {
+        //if (DispData[i] == 0x7f) SegData[i] = 0x00;
+        //else SegData[i] = DispData[i];
+        //{
+        lastData[i] = DispData[i];
+ 34c:	21 91       	ld	r18, Z+
+ 34e:	da 01       	movw	r26, r20
+ 350:	2d 93       	st	X+, r18
+ 352:	ad 01       	movw	r20, r26
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:89
+        SegData[i] = DispData[i] + PointData;
+ 354:	8f 01       	movw	r16, r30
+ 356:	01 50       	subi	r16, 0x01	; 1
+ 358:	11 09       	sbc	r17, r1
+ 35a:	d8 01       	movw	r26, r16
+ 35c:	2c 91       	ld	r18, X
+ 35e:	23 0f       	add	r18, r19
+ 360:	d7 01       	movw	r26, r14
+ 362:	2d 93       	st	X+, r18
+ 364:	7d 01       	movw	r14, r26
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:84
+    sendArray(SegData);
+}
+void GyverTM1637::displayByte(uint8_t DispData[])
+{
+    uint8_t SegData[4];
+    for (byte i = 0; i < 4; i ++) {
+ 366:	e6 17       	cp	r30, r22
+ 368:	f7 07       	cpc	r31, r23
+ 36a:	81 f7       	brne	.-32     	; 0x34c <GyverTM1637::displayByte(unsigned char*) [clone .constprop.8]+0x2a>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:92
+        //{
+        lastData[i] = DispData[i];
+        SegData[i] = DispData[i] + PointData;
+        //}	
+    }
+    sendArray(SegData);
+ 36c:	bb df       	rcall	.-138    	; 0x2e4 <GyverTM1637::sendArray(unsigned char*) [clone .constprop.9]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:93
+}
+ 36e:	cc 5f       	subi	r28, 0xFC	; 252
+ 370:	cd bf       	out	0x3d, r28	; 61
+ 372:	df 91       	pop	r29
+ 374:	cf 91       	pop	r28
+ 376:	1f 91       	pop	r17
+ 378:	0f 91       	pop	r16
+ 37a:	ff 90       	pop	r15
+ 37c:	ef 90       	pop	r14
+ 37e:	08 95       	ret
+
+00000380 <DisplayTime(unsigned int)>:
+_Z11DisplayTimej():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:910
+//	int8_t bt0 = _Val /1000 % 10;
+//	
+//	disp.display(bt0, bt1, bt2, bt3);
+//}
+void DisplayTime(uint16_t _Seconds) //Моя функция переработки общих секунд в МИН:СЕК
+{
+ 380:	0f 93       	push	r16
+ 382:	1f 93       	push	r17
+ 384:	cf 93       	push	r28
+ 386:	df 93       	push	r29
+ 388:	cd b7       	in	r28, 0x3d	; 61
+ 38a:	dd 27       	eor	r29, r29
+ 38c:	c8 50       	subi	r28, 0x08	; 8
+ 38e:	cd bf       	out	0x3d, r28	; 61
+ 390:	fc 01       	movw	r30, r24
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:911
+	uint8_t bt0 = _Seconds / 600 % 10;
+ 392:	68 e5       	ldi	r22, 0x58	; 88
+ 394:	72 e0       	ldi	r23, 0x02	; 2
+ 396:	e8 d1       	rcall	.+976    	; 0x768 <__udivmodhi4>
+ 398:	cb 01       	movw	r24, r22
+ 39a:	2a e0       	ldi	r18, 0x0A	; 10
+ 39c:	30 e0       	ldi	r19, 0x00	; 0
+ 39e:	b9 01       	movw	r22, r18
+ 3a0:	e3 d1       	rcall	.+966    	; 0x768 <__udivmodhi4>
+ 3a2:	48 2f       	mov	r20, r24
+ 3a4:	19 2f       	mov	r17, r25
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:912
+	uint8_t bt1 = _Seconds / 60 % 10;
+ 3a6:	cf 01       	movw	r24, r30
+ 3a8:	6c e3       	ldi	r22, 0x3C	; 60
+ 3aa:	70 e0       	ldi	r23, 0x00	; 0
+ 3ac:	dd d1       	rcall	.+954    	; 0x768 <__udivmodhi4>
+ 3ae:	cb 01       	movw	r24, r22
+ 3b0:	b9 01       	movw	r22, r18
+ 3b2:	da d1       	rcall	.+948    	; 0x768 <__udivmodhi4>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:911
+//	
+//	disp.display(bt0, bt1, bt2, bt3);
+//}
+void DisplayTime(uint16_t _Seconds) //Моя функция переработки общих секунд в МИН:СЕК
+{
+	uint8_t bt0 = _Seconds / 600 % 10;
+ 3b4:	4d 83       	std	Y+5, r20	; 0x05
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:912
+	uint8_t bt1 = _Seconds / 60 % 10;
+ 3b6:	8e 83       	std	Y+6, r24	; 0x06
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:913
+	uint8_t bt2 = (_Seconds - 60 * bt1 - 600 * bt0) / 10 % 10;
+ 3b8:	6c e3       	ldi	r22, 0x3C	; 60
+ 3ba:	70 e0       	ldi	r23, 0x00	; 0
+ 3bc:	c4 d1       	rcall	.+904    	; 0x746 <__mulhi3>
+ 3be:	df 01       	movw	r26, r30
+ 3c0:	a8 1b       	sub	r26, r24
+ 3c2:	b9 0b       	sbc	r27, r25
+ 3c4:	84 2f       	mov	r24, r20
+ 3c6:	91 2f       	mov	r25, r17
+ 3c8:	68 e5       	ldi	r22, 0x58	; 88
+ 3ca:	72 e0       	ldi	r23, 0x02	; 2
+ 3cc:	bc d1       	rcall	.+888    	; 0x746 <__mulhi3>
+ 3ce:	ad 01       	movw	r20, r26
+ 3d0:	48 1b       	sub	r20, r24
+ 3d2:	59 0b       	sbc	r21, r25
+ 3d4:	ca 01       	movw	r24, r20
+ 3d6:	b9 01       	movw	r22, r18
+ 3d8:	c7 d1       	rcall	.+910    	; 0x768 <__udivmodhi4>
+ 3da:	cb 01       	movw	r24, r22
+ 3dc:	b9 01       	movw	r22, r18
+ 3de:	c4 d1       	rcall	.+904    	; 0x768 <__udivmodhi4>
+ 3e0:	8f 83       	std	Y+7, r24	; 0x07
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:914
+	uint8_t bt3 = _Seconds % 10;
+ 3e2:	cf 01       	movw	r24, r30
+ 3e4:	b9 01       	movw	r22, r18
+ 3e6:	c0 d1       	rcall	.+896    	; 0x768 <__udivmodhi4>
+ 3e8:	88 87       	std	Y+8, r24	; 0x08
+display():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:76
+    for (byte i = 0; i < 4; i ++) {
+        //if (DispData[i] == 0x7f) SegData[i] = 0x00;
+        //else 
+        //{
+        lastData[i] = digitHEX[DispData[i]];
+        SegData[i] = digitHEX[DispData[i]] + PointData;
+ 3ea:	30 91 83 00 	lds	r19, 0x0083	; 0x800083 <disp+0x7>
+ 3ee:	ae 01       	movw	r20, r28
+ 3f0:	4b 5f       	subi	r20, 0xFB	; 251
+ 3f2:	5f 4f       	sbci	r21, 0xFF	; 255
+ 3f4:	6c e7       	ldi	r22, 0x7C	; 124
+ 3f6:	70 e0       	ldi	r23, 0x00	; 0
+ 3f8:	de 01       	movw	r26, r28
+ 3fa:	11 96       	adiw	r26, 0x01	; 1
+ 3fc:	8e 01       	movw	r16, r28
+ 3fe:	07 5f       	subi	r16, 0xF7	; 247
+ 400:	1f 4f       	sbci	r17, 0xFF	; 255
+ 402:	cd 01       	movw	r24, r26
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:75
+    uint8_t SegData[4];
+    for (byte i = 0; i < 4; i ++) {
+        //if (DispData[i] == 0x7f) SegData[i] = 0x00;
+        //else 
+        //{
+        lastData[i] = digitHEX[DispData[i]];
+ 404:	fa 01       	movw	r30, r20
+ 406:	21 91       	ld	r18, Z+
+ 408:	af 01       	movw	r20, r30
+ 40a:	e2 2f       	mov	r30, r18
+ 40c:	f0 e0       	ldi	r31, 0x00	; 0
+ 40e:	eb 59       	subi	r30, 0x9B	; 155
+ 410:	ff 4f       	sbci	r31, 0xFF	; 255
+ 412:	20 81       	ld	r18, Z
+ 414:	fb 01       	movw	r30, r22
+ 416:	21 93       	st	Z+, r18
+ 418:	bf 01       	movw	r22, r30
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:76
+        SegData[i] = digitHEX[DispData[i]] + PointData;
+ 41a:	23 0f       	add	r18, r19
+ 41c:	2d 93       	st	X+, r18
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:71
+
+// ************************** Р¤РћР РњРР РЈР•Рњ Р”РђРќРќР«Р• *****************************
+void GyverTM1637::display(uint8_t DispData[])
+{
+    uint8_t SegData[4];
+    for (byte i = 0; i < 4; i ++) {
+ 41e:	40 17       	cp	r20, r16
+ 420:	51 07       	cpc	r21, r17
+ 422:	81 f7       	brne	.-32     	; 0x404 <__LOCK_REGION_LENGTH__+0x4>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:79
+        //{
+        lastData[i] = digitHEX[DispData[i]];
+        SegData[i] = digitHEX[DispData[i]] + PointData;
+        //}
+    }
+    sendArray(SegData);
+ 424:	5f df       	rcall	.-322    	; 0x2e4 <GyverTM1637::sendArray(unsigned char*) [clone .constprop.9]>
+_Z11DisplayTimej():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:917
+	
+	disp.display(bt0, bt1, bt2, bt3); //GyverTM1637 MM:SS
+ 426:	c8 5f       	subi	r28, 0xF8	; 248
+ 428:	cd bf       	out	0x3d, r28	; 61
+ 42a:	df 91       	pop	r29
+ 42c:	cf 91       	pop	r28
+ 42e:	1f 91       	pop	r17
+ 430:	0f 91       	pop	r16
+ 432:	08 95       	ret
+
+00000434 <GyverTM1637::display(unsigned char, unsigned char) [clone .constprop.4]>:
+_ZN11GyverTM16377displayEhh.constprop.4():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:95
+        //}	
+    }
+    sendArray(SegData);
+}
+
+void GyverTM1637::display(uint8_t BitAddr, uint8_t DispData)
+ 434:	0f 93       	push	r16
+ 436:	1f 93       	push	r17
+ 438:	cf 93       	push	r28
+ 43a:	df 93       	push	r29
+ 43c:	18 2f       	mov	r17, r24
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:101
+{ 
+    uint8_t SegData;
+    //if (DispData == 0x7f) SegData = 0x00;
+    //else
+    //{  
+    lastData[BitAddr] = digitHEX[DispData];
+ 43e:	cc e7       	ldi	r28, 0x7C	; 124
+ 440:	d0 e0       	ldi	r29, 0x00	; 0
+ 442:	e8 2f       	mov	r30, r24
+ 444:	f0 e0       	ldi	r31, 0x00	; 0
+ 446:	e4 58       	subi	r30, 0x84	; 132
+ 448:	ff 4f       	sbci	r31, 0xFF	; 255
+ 44a:	10 82       	st	Z, r1
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:104
+    SegData = digitHEX[DispData] + PointData;
+    //}  
+    sendByte(BitAddr, SegData);
+ 44c:	0f 81       	ldd	r16, Y+7	; 0x07
+sendByte():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:121
+    sendByte(BitAddr, SegData);
+}
+
+// ************************** РћРўРџР РђР’РљРђ РќРђ Р”РРЎРџР›Р•Р™ *****************************
+void GyverTM1637::sendByte(uint8_t BitAddr, int8_t sendData) {
+    start();          //start signal sent to GyverTM1637 from MCU
+ 44e:	a9 de       	rcall	.-686    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:122
+    writeByte(ADDR_FIXED);//
+ 450:	84 e4       	ldi	r24, 0x44	; 68
+ 452:	f7 de       	rcall	.-530    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:123
+    stop();           //
+ 454:	94 de       	rcall	.-728    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:124
+    start();          //
+ 456:	a5 de       	rcall	.-694    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:125
+    writeByte(BitAddr | 0xc0); //
+ 458:	81 2f       	mov	r24, r17
+ 45a:	80 6c       	ori	r24, 0xC0	; 192
+ 45c:	f2 de       	rcall	.-540    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:126
+    writeByte(sendData);//
+ 45e:	80 2f       	mov	r24, r16
+ 460:	f0 de       	rcall	.-544    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:127
+    stop();            //
+ 462:	8d de       	rcall	.-742    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:128
+    start();          //
+ 464:	9e de       	rcall	.-708    	; 0x1a2 <GyverTM1637::start() [clone .constprop.10]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:129
+    writeByte(Cmd_DispCtrl);//
+ 466:	8e 81       	ldd	r24, Y+6	; 0x06
+ 468:	ec de       	rcall	.-552    	; 0x242 <GyverTM1637::writeByte(signed char) [clone .constprop.11]>
+_ZN11GyverTM16377displayEhh.constprop.4():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:105
+    //{  
+    lastData[BitAddr] = digitHEX[DispData];
+    SegData = digitHEX[DispData] + PointData;
+    //}  
+    sendByte(BitAddr, SegData);
+}
+ 46a:	df 91       	pop	r29
+ 46c:	cf 91       	pop	r28
+ 46e:	1f 91       	pop	r17
+ 470:	0f 91       	pop	r16
+sendByte():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:130
+    writeByte(BitAddr | 0xc0); //
+    writeByte(sendData);//
+    stop();            //
+    start();          //
+    writeByte(Cmd_DispCtrl);//
+    stop();           //
+ 472:	85 ce       	rjmp	.-758    	; 0x17e <GyverTM1637::stop() [clone .constprop.14]>
+
+00000474 <__vector_13>:
+__vector_13():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:813
+}
+
+void loop() {
+}
+
+ISR(TIMER0_COMPA_vect) {
+ 474:	1f 92       	push	r1
+ 476:	0f 92       	push	r0
+ 478:	0f b6       	in	r0, 0x3f	; 63
+ 47a:	0f 92       	push	r0
+ 47c:	11 24       	eor	r1, r1
+ 47e:	0f 93       	push	r16
+ 480:	1f 93       	push	r17
+ 482:	2f 93       	push	r18
+ 484:	3f 93       	push	r19
+ 486:	4f 93       	push	r20
+ 488:	5f 93       	push	r21
+ 48a:	6f 93       	push	r22
+ 48c:	7f 93       	push	r23
+ 48e:	8f 93       	push	r24
+ 490:	9f 93       	push	r25
+ 492:	af 93       	push	r26
+ 494:	bf 93       	push	r27
+ 496:	cf 93       	push	r28
+ 498:	df 93       	push	r29
+ 49a:	ef 93       	push	r30
+ 49c:	ff 93       	push	r31
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:815
+	// ваш код
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+ 49e:	89 ef       	ldi	r24, 0xF9	; 249
+ 4a0:	86 bf       	out	0x36, r24	; 54
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:816
+	myPreDiv--;
+ 4a2:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <myPreDiv>
+ 4a6:	90 91 64 00 	lds	r25, 0x0064	; 0x800064 <myPreDiv+0x1>
+ 4aa:	01 97       	sbiw	r24, 0x01	; 1
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:817
+	if (myPreDiv == 0) {
+ 4ac:	c9 f0       	breq	.+50     	; 0x4e0 <__vector_13+0x6c>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:816
+}
+
+ISR(TIMER0_COMPA_vect) {
+	// ваш код
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	myPreDiv--;
+ 4ae:	90 93 64 00 	sts	0x0064, r25	; 0x800064 <myPreDiv+0x1>
+ 4b2:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <myPreDiv>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:826
+		if (period2 == 0) {
+			period2 = HalfTimePeriod;
+			PeriodForTime();
+		}
+	}
+}
+ 4b6:	ff 91       	pop	r31
+ 4b8:	ef 91       	pop	r30
+ 4ba:	df 91       	pop	r29
+ 4bc:	cf 91       	pop	r28
+ 4be:	bf 91       	pop	r27
+ 4c0:	af 91       	pop	r26
+ 4c2:	9f 91       	pop	r25
+ 4c4:	8f 91       	pop	r24
+ 4c6:	7f 91       	pop	r23
+ 4c8:	6f 91       	pop	r22
+ 4ca:	5f 91       	pop	r21
+ 4cc:	4f 91       	pop	r20
+ 4ce:	3f 91       	pop	r19
+ 4d0:	2f 91       	pop	r18
+ 4d2:	1f 91       	pop	r17
+ 4d4:	0f 91       	pop	r16
+ 4d6:	0f 90       	pop	r0
+ 4d8:	0f be       	out	0x3f, r0	; 63
+ 4da:	0f 90       	pop	r0
+ 4dc:	1f 90       	pop	r1
+ 4de:	18 95       	reti
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:818
+ISR(TIMER0_COMPA_vect) {
+	// ваш код
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	myPreDiv--;
+	if (myPreDiv == 0) {
+		myPreDiv = PREDIV;
+ 4e0:	89 e1       	ldi	r24, 0x19	; 25
+ 4e2:	90 e0       	ldi	r25, 0x00	; 0
+ 4e4:	90 93 64 00 	sts	0x0064, r25	; 0x800064 <myPreDiv+0x1>
+ 4e8:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <myPreDiv>
+PeriodForSet():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:839
+	TCCR0B = (1<<CS02); // CLK/256
+	TIMSK =  (1 << OCIE0A);  // Разрешить прерывание по совпадению
+}
+
+void PeriodForSet() {			//УСТАНОВОЧНЫЙ ЦИКЛИЧНЫЙ ПРОХОД
+	flagKey1Pressed = !digitalRead(KEY1_PIN);
+ 4ec:	89 e0       	ldi	r24, 0x09	; 9
+ 4ee:	ec dd       	rcall	.-1064   	; 0xc8 <digitalRead>
+ 4f0:	21 e0       	ldi	r18, 0x01	; 1
+ 4f2:	89 2b       	or	r24, r25
+ 4f4:	09 f0       	breq	.+2      	; 0x4f8 <__vector_13+0x84>
+ 4f6:	20 e0       	ldi	r18, 0x00	; 0
+ 4f8:	20 93 75 00 	sts	0x0075, r18	; 0x800075 <flagKey1Pressed>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:840
+	flagKey10Pressed = !digitalRead(KEY10_PIN);
+ 4fc:	88 e0       	ldi	r24, 0x08	; 8
+ 4fe:	e4 dd       	rcall	.-1080   	; 0xc8 <digitalRead>
+ 500:	8c 01       	movw	r16, r24
+ 502:	81 e0       	ldi	r24, 0x01	; 1
+ 504:	01 15       	cp	r16, r1
+ 506:	11 05       	cpc	r17, r1
+ 508:	09 f0       	breq	.+2      	; 0x50c <__vector_13+0x98>
+ 50a:	80 e0       	ldi	r24, 0x00	; 0
+ 50c:	80 93 76 00 	sts	0x0076, r24	; 0x800076 <flagKey10Pressed>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:841
+			if (countExit > 0) {
+ 510:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <countExit>
+ 514:	88 23       	and	r24, r24
+ 516:	09 f4       	brne	.+2      	; 0x51a <__vector_13+0xa6>
+ 518:	4e c0       	rjmp	.+156    	; 0x5b6 <__vector_13+0x142>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:842
+				if (countExit != countExitDefault) {			 //отсчёт до пуска таймера
+ 51a:	90 91 7b 00 	lds	r25, 0x007B	; 0x80007b <countExitDefault>
+ 51e:	89 17       	cp	r24, r25
+ 520:	09 f4       	brne	.+2      	; 0x524 <__vector_13+0xb0>
+ 522:	54 c0       	rjmp	.+168    	; 0x5cc <__vector_13+0x158>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:843
+					countExit--;
+ 524:	81 50       	subi	r24, 0x01	; 1
+ 526:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <countExit>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:851
+					if (alarmCount>0) {							 //alarmCount - если вошли с не нулевым alarmCount, то включаем звонок
+						digitalWrite(ALARM_PINOUT, HIGH);
+						alarmCount--;							//считаем до выключения звонка
+ 					}else digitalWrite(ALARM_PINOUT, LOW);		//выключаем звонок через  period1 * countAlarmDefault
+				}
+				if (flagKey10Pressed || flagKey1Pressed) {					//обработка тыков юзвера
+ 52a:	01 15       	cp	r16, r1
+ 52c:	11 05       	cpc	r17, r1
+ 52e:	29 f0       	breq	.+10     	; 0x53a <__vector_13+0xc6>
+ 530:	80 91 75 00 	lds	r24, 0x0075	; 0x800075 <flagKey1Pressed>
+ 534:	88 23       	and	r24, r24
+ 536:	09 f4       	brne	.+2      	; 0x53a <__vector_13+0xc6>
+ 538:	5c c0       	rjmp	.+184    	; 0x5f2 <__vector_13+0x17e>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:852
+						if (!flagIsPress) {
+ 53a:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <__data_end>
+ 53e:	81 11       	cpse	r24, r1
+ 540:	2f c0       	rjmp	.+94     	; 0x5a0 <__vector_13+0x12c>
+ 542:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <timeLeft>
+ 546:	90 91 74 00 	lds	r25, 0x0074	; 0x800074 <timeLeft+0x1>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:853
+							flagIsPress = true;
+ 54a:	21 e0       	ldi	r18, 0x01	; 1
+ 54c:	20 93 72 00 	sts	0x0072, r18	; 0x800072 <__data_end>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:854
+								countExit = countExitDefault - 1; //Сброс или запуск начала отсчёта до пуска таймера
+ 550:	20 91 7b 00 	lds	r18, 0x007B	; 0x80007b <countExitDefault>
+ 554:	3f ef       	ldi	r19, 0xFF	; 255
+ 556:	32 0f       	add	r19, r18
+ 558:	30 93 79 00 	sts	0x0079, r19	; 0x800079 <countExit>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:855
+								if (flagKey1Pressed) timeLeft+=60; //Уставка времени В секуднах (1 мин = 60 сек)
+ 55c:	30 91 75 00 	lds	r19, 0x0075	; 0x800075 <flagKey1Pressed>
+ 560:	33 23       	and	r19, r19
+ 562:	29 f0       	breq	.+10     	; 0x56e <__vector_13+0xfa>
+ 564:	cc 96       	adiw	r24, 0x3c	; 60
+ 566:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <timeLeft+0x1>
+ 56a:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <timeLeft>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:856
+								if (flagKey10Pressed) timeLeft += 600;
+ 56e:	01 2b       	or	r16, r17
+ 570:	51 f4       	brne	.+20     	; 0x586 <__vector_13+0x112>
+ 572:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <timeLeft>
+ 576:	90 91 74 00 	lds	r25, 0x0074	; 0x800074 <timeLeft+0x1>
+ 57a:	88 5a       	subi	r24, 0xA8	; 168
+ 57c:	9d 4f       	sbci	r25, 0xFD	; 253
+ 57e:	90 93 74 00 	sts	0x0074, r25	; 0x800074 <timeLeft+0x1>
+ 582:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <timeLeft>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:857
+								if (timeLeft > 5940) {				//Если тупой юзвер вдруг обосрался и натыкал запредельно огромное значение (>99 минут) то
+ 586:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <timeLeft>
+ 58a:	90 91 74 00 	lds	r25, 0x0074	; 0x800074 <timeLeft+0x1>
+ 58e:	85 33       	cpi	r24, 0x35	; 53
+ 590:	97 41       	sbci	r25, 0x17	; 23
+ 592:	30 f0       	brcs	.+12     	; 0x5a0 <__vector_13+0x12c>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:858
+									timeLeft = 0;					//сброс время по кругу
+ 594:	10 92 74 00 	sts	0x0074, r1	; 0x800074 <timeLeft+0x1>
+ 598:	10 92 73 00 	sts	0x0073, r1	; 0x800073 <timeLeft>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:859
+									countExit = countExitDefault;   //начало работы
+ 59c:	20 93 79 00 	sts	0x0079, r18	; 0x800079 <countExit>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:867
+				}
+				else
+				{
+					flagIsPress = false;
+				}
+				DisplayTime(timeLeft);
+ 5a0:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <timeLeft>
+ 5a4:	90 91 74 00 	lds	r25, 0x0074	; 0x800074 <timeLeft+0x1>
+ 5a8:	eb de       	rcall	.-554    	; 0x380 <DisplayTime(unsigned int)>
+point():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:184
+}
+
+
+void GyverTM1637::point(boolean PointFlag, bool upd)
+{
+    if (PointFlag) PointData = 0x80;
+ 5aa:	80 e8       	ldi	r24, 0x80	; 128
+ 5ac:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <disp+0x7>
+update():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:170
+    lastData[2] = 0x00;
+    lastData[3] = 0x00;
+}
+void GyverTM1637::update(void)
+{
+    displayByte(lastData);
+ 5b0:	8c e7       	ldi	r24, 0x7C	; 124
+ 5b2:	90 e0       	ldi	r25, 0x00	; 0
+ 5b4:	b6 de       	rcall	.-660    	; 0x322 <GyverTM1637::displayByte(unsigned char*) [clone .constprop.8]>
+__vector_13():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:820
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	myPreDiv--;
+	if (myPreDiv == 0) {
+		myPreDiv = PREDIV;
+		PeriodForSet();
+		period2--;
+ 5b6:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <period2>
+ 5ba:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <period2+0x1>
+ 5be:	01 97       	sbiw	r24, 0x01	; 1
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:821
+		if (period2 == 0) {
+ 5c0:	d9 f0       	breq	.+54     	; 0x5f8 <__vector_13+0x184>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:820
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. 
+	myPreDiv--;
+	if (myPreDiv == 0) {
+		myPreDiv = PREDIV;
+		PeriodForSet();
+		period2--;
+ 5c2:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <period2+0x1>
+ 5c6:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <period2>
+ 5ca:	75 cf       	rjmp	.-278    	; 0x4b6 <__vector_13+0x42>
+PeriodForSet():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:846
+			if (countExit > 0) {
+				if (countExit != countExitDefault) {			 //отсчёт до пуска таймера
+					countExit--;
+				}
+				else {										      //countExit == countExitDefault - условие входа (начала работы)
+					if (alarmCount>0) {							 //alarmCount - если вошли с не нулевым alarmCount, то включаем звонок
+ 5cc:	c0 91 77 00 	lds	r28, 0x0077	; 0x800077 <alarmCount>
+ 5d0:	d0 91 78 00 	lds	r29, 0x0078	; 0x800078 <alarmCount+0x1>
+ 5d4:	20 97       	sbiw	r28, 0x00	; 0
+ 5d6:	49 f0       	breq	.+18     	; 0x5ea <__vector_13+0x176>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:847
+						digitalWrite(ALARM_PINOUT, HIGH);
+ 5d8:	61 e0       	ldi	r22, 0x01	; 1
+ 5da:	8c e0       	ldi	r24, 0x0C	; 12
+ 5dc:	93 dd       	rcall	.-1242   	; 0x104 <digitalWrite>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:848
+						alarmCount--;							//считаем до выключения звонка
+ 5de:	21 97       	sbiw	r28, 0x01	; 1
+ 5e0:	d0 93 78 00 	sts	0x0078, r29	; 0x800078 <alarmCount+0x1>
+ 5e4:	c0 93 77 00 	sts	0x0077, r28	; 0x800077 <alarmCount>
+ 5e8:	a0 cf       	rjmp	.-192    	; 0x52a <__vector_13+0xb6>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:849
+ 					}else digitalWrite(ALARM_PINOUT, LOW);		//выключаем звонок через  period1 * countAlarmDefault
+ 5ea:	60 e0       	ldi	r22, 0x00	; 0
+ 5ec:	8c e0       	ldi	r24, 0x0C	; 12
+ 5ee:	8a dd       	rcall	.-1260   	; 0x104 <digitalWrite>
+ 5f0:	9c cf       	rjmp	.-200    	; 0x52a <__vector_13+0xb6>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:865
+								}
+						}
+				}
+				else
+				{
+					flagIsPress = false;
+ 5f2:	10 92 72 00 	sts	0x0072, r1	; 0x800072 <__data_end>
+ 5f6:	d4 cf       	rjmp	.-88     	; 0x5a0 <__vector_13+0x12c>
+__vector_13():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:822
+	if (myPreDiv == 0) {
+		myPreDiv = PREDIV;
+		PeriodForSet();
+		period2--;
+		if (period2 == 0) {
+			period2 = HalfTimePeriod;
+ 5f8:	85 e0       	ldi	r24, 0x05	; 5
+ 5fa:	90 e0       	ldi	r25, 0x00	; 0
+ 5fc:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <period2+0x1>
+ 600:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <period2>
+PeriodForTime():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:874
+
+			}
+}
+
+void PeriodForTime() {			//РАБОЧИЙ ОТСЧЁТ ПРОХОД
+		if (countExit == 0) {
+ 604:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <countExit>
+ 608:	81 11       	cpse	r24, r1
+ 60a:	55 cf       	rjmp	.-342    	; 0x4b6 <__vector_13+0x42>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:875
+			if (flagPoint) {						//все действия только по миганию двоеточия (точки)
+ 60c:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 610:	88 23       	and	r24, r24
+ 612:	09 f4       	brne	.+2      	; 0x616 <__vector_13+0x1a2>
+ 614:	42 c0       	rjmp	.+132    	; 0x69a <__vector_13+0x226>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:876
+				alarmCount = countAlarmDefault;     //
+ 616:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <countAlarmDefault>
+ 61a:	90 e0       	ldi	r25, 0x00	; 0
+ 61c:	90 93 78 00 	sts	0x0078, r25	; 0x800078 <alarmCount+0x1>
+ 620:	80 93 77 00 	sts	0x0077, r24	; 0x800077 <alarmCount>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:877
+				if (flagKey10Pressed || flagKey1Pressed) {		//экстренное завершение тык юзера
+ 624:	80 91 76 00 	lds	r24, 0x0076	; 0x800076 <flagKey10Pressed>
+ 628:	81 11       	cpse	r24, r1
+ 62a:	04 c0       	rjmp	.+8      	; 0x634 <__vector_13+0x1c0>
+ 62c:	80 91 75 00 	lds	r24, 0x0075	; 0x800075 <flagKey1Pressed>
+ 630:	88 23       	and	r24, r24
+ 632:	41 f0       	breq	.+16     	; 0x644 <__vector_13+0x1d0>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:878
+					timeLeft = 0;
+ 634:	10 92 74 00 	sts	0x0074, r1	; 0x800074 <timeLeft+0x1>
+ 638:	10 92 73 00 	sts	0x0073, r1	; 0x800073 <timeLeft>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:879
+					alarmCount = 0;					//шоп не сработал аларм, а то у юзера ухи порвутся
+ 63c:	10 92 78 00 	sts	0x0078, r1	; 0x800078 <alarmCount+0x1>
+ 640:	10 92 77 00 	sts	0x0077, r1	; 0x800077 <alarmCount>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:881
+				}
+				if (timeLeft == 0) {				//обычное завершение когда timeLeft==0 (или по нисходящей экстренное завершение )
+ 644:	c0 91 73 00 	lds	r28, 0x0073	; 0x800073 <timeLeft>
+ 648:	d0 91 74 00 	lds	r29, 0x0074	; 0x800074 <timeLeft+0x1>
+ 64c:	20 97       	sbiw	r28, 0x00	; 0
+ 64e:	d1 f4       	brne	.+52     	; 0x684 <__vector_13+0x210>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:882
+					digitalWrite(RELE_PINOUT, LOW);
+ 650:	60 e0       	ldi	r22, 0x00	; 0
+ 652:	8d e0       	ldi	r24, 0x0D	; 13
+ 654:	57 dd       	rcall	.-1362   	; 0x104 <digitalWrite>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:883
+					countExit = countExitDefault;   //сброс в начало работы
+ 656:	80 91 7b 00 	lds	r24, 0x007B	; 0x80007b <countExitDefault>
+ 65a:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <countExit>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:884
+					flagIsPress = true;				//для игнорирования нажатой сейчас кнопки
+ 65e:	81 e0       	ldi	r24, 0x01	; 1
+ 660:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <__data_end>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:895
+				}
+			}
+			else {
+				flagPoint = true;	//инверсия двоеточия (точки)
+			}
+			DisplayTime(timeLeft);	//отображение времени
+ 664:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <timeLeft>
+ 668:	90 91 74 00 	lds	r25, 0x0074	; 0x800074 <timeLeft+0x1>
+ 66c:	89 de       	rcall	.-750    	; 0x380 <DisplayTime(unsigned int)>
+point():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:184
+}
+
+
+void GyverTM1637::point(boolean PointFlag, bool upd)
+{
+    if (PointFlag) PointData = 0x80;
+ 66e:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 672:	81 11       	cpse	r24, r1
+ 674:	16 c0       	rjmp	.+44     	; 0x6a2 <__vector_13+0x22e>
+ 676:	80 e8       	ldi	r24, 0x80	; 128
+ 678:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <disp+0x7>
+update():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:170
+    lastData[2] = 0x00;
+    lastData[3] = 0x00;
+}
+void GyverTM1637::update(void)
+{
+    displayByte(lastData);
+ 67c:	8c e7       	ldi	r24, 0x7C	; 124
+ 67e:	90 e0       	ldi	r25, 0x00	; 0
+ 680:	50 de       	rcall	.-864    	; 0x322 <GyverTM1637::displayByte(unsigned char*) [clone .constprop.8]>
+ 682:	19 cf       	rjmp	.-462    	; 0x4b6 <__vector_13+0x42>
+PeriodForTime():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:887
+					digitalWrite(RELE_PINOUT, LOW);
+					countExit = countExitDefault;   //сброс в начало работы
+					flagIsPress = true;				//для игнорирования нажатой сейчас кнопки
+				}
+				else {
+					digitalWrite(RELE_PINOUT, HIGH); //режим таймера --
+ 684:	61 e0       	ldi	r22, 0x01	; 1
+ 686:	8d e0       	ldi	r24, 0x0D	; 13
+ 688:	3d dd       	rcall	.-1414   	; 0x104 <digitalWrite>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:888
+					timeLeft--;
+ 68a:	21 97       	sbiw	r28, 0x01	; 1
+ 68c:	d0 93 74 00 	sts	0x0074, r29	; 0x800074 <timeLeft+0x1>
+ 690:	c0 93 73 00 	sts	0x0073, r28	; 0x800073 <timeLeft>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:889
+					flagPoint = false;
+ 694:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 698:	e5 cf       	rjmp	.-54     	; 0x664 <__vector_13+0x1f0>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:893
+				}
+			}
+			else {
+				flagPoint = true;	//инверсия двоеточия (точки)
+ 69a:	81 e0       	ldi	r24, 0x01	; 1
+ 69c:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 6a0:	e1 cf       	rjmp	.-62     	; 0x664 <__vector_13+0x1f0>
+point():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:185
+
+
+void GyverTM1637::point(boolean PointFlag, bool upd)
+{
+    if (PointFlag) PointData = 0x80;
+    else PointData = 0;
+ 6a2:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <disp+0x7>
+ 6a6:	ea cf       	rjmp	.-44     	; 0x67c <__vector_13+0x208>
+
+000006a8 <main>:
+main():
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1138
+*/
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+ 6a8:	83 e0       	ldi	r24, 0x03	; 3
+ 6aa:	80 bf       	out	0x30, r24	; 48
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1141
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+ 6ac:	83 bf       	out	0x33, r24	; 51
+C:\Users\RomixERR\AppData\Local\arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1162
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 6ae:	78 94       	sei
+setup():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:801
+bool flagKey1Pressed, flagKey10Pressed;
+
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+	pinMode(KEY10_PIN, INPUT_PULLUP); 
+ 6b0:	62 e0       	ldi	r22, 0x02	; 2
+ 6b2:	88 e0       	ldi	r24, 0x08	; 8
+ 6b4:	88 dd       	rcall	.-1264   	; 0x1c6 <pinMode>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:802
+	pinMode(KEY1_PIN, INPUT_PULLUP);
+ 6b6:	62 e0       	ldi	r22, 0x02	; 2
+ 6b8:	89 e0       	ldi	r24, 0x09	; 9
+ 6ba:	85 dd       	rcall	.-1270   	; 0x1c6 <pinMode>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:803
+	pinMode(RELE_PINOUT, OUTPUT);   
+ 6bc:	61 e0       	ldi	r22, 0x01	; 1
+ 6be:	8d e0       	ldi	r24, 0x0D	; 13
+ 6c0:	82 dd       	rcall	.-1276   	; 0x1c6 <pinMode>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:804
+	pinMode(ALARM_PINOUT, OUTPUT);
+ 6c2:	61 e0       	ldi	r22, 0x01	; 1
+ 6c4:	8c e0       	ldi	r24, 0x0C	; 12
+ 6c6:	7f dd       	rcall	.-1282   	; 0x1c6 <pinMode>
+InitialTIMER0():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:831
+}
+
+void InitialTIMER0() {
+	// Timer/Counter 0 initialization
+	//Частота прерываний будет = Fclk / (2 * N * (1 + OCR0A)) / 2    где N - коэф. предделителя (1, 8, 64, 256 или 1024)
+	interrupts();
+ 6c8:	78 94       	sei
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:832
+	OCR0A = OCR0ASET; //регистр сравнения Верхняя граница счета. Диапазон от 0 до 255. ОБНОВИ В ISR(TIMER0_COMPA_vect)
+ 6ca:	89 ef       	ldi	r24, 0xF9	; 249
+ 6cc:	86 bf       	out	0x36, r24	; 54
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:833
+	TCCR0A = (1<<WGM01); //CTC (Сброс при совпадении)
+ 6ce:	82 e0       	ldi	r24, 0x02	; 2
+ 6d0:	80 bf       	out	0x30, r24	; 48
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:834
+	TCCR0B = (1<<CS02); // CLK/256
+ 6d2:	84 e0       	ldi	r24, 0x04	; 4
+ 6d4:	83 bf       	out	0x33, r24	; 51
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:835
+	TIMSK =  (1 << OCIE0A);  // Разрешить прерывание по совпадению
+ 6d6:	81 e0       	ldi	r24, 0x01	; 1
+ 6d8:	89 bf       	out	0x39, r24	; 57
+clear():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:159
+    display(dispArray);
+}
+
+void GyverTM1637::clear(void)
+{
+    display(0x00, 0x7f);
+ 6da:	80 e0       	ldi	r24, 0x00	; 0
+ 6dc:	ab de       	rcall	.-682    	; 0x434 <GyverTM1637::display(unsigned char, unsigned char) [clone .constprop.4]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:160
+    display(0x01, 0x7f);
+ 6de:	81 e0       	ldi	r24, 0x01	; 1
+ 6e0:	a9 de       	rcall	.-686    	; 0x434 <GyverTM1637::display(unsigned char, unsigned char) [clone .constprop.4]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:161
+    display(0x02, 0x7f);
+ 6e2:	82 e0       	ldi	r24, 0x02	; 2
+ 6e4:	a7 de       	rcall	.-690    	; 0x434 <GyverTM1637::display(unsigned char, unsigned char) [clone .constprop.4]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:162
+    display(0x03, 0x7f);
+ 6e6:	83 e0       	ldi	r24, 0x03	; 3
+ 6e8:	a5 de       	rcall	.-694    	; 0x434 <GyverTM1637::display(unsigned char, unsigned char) [clone .constprop.4]>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:163
+    lastData[0] = 0x00;
+ 6ea:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <disp>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:164
+    lastData[1] = 0x00;
+ 6ee:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <disp+0x1>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:165
+    lastData[2] = 0x00;
+ 6f2:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <disp+0x2>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:166
+    lastData[3] = 0x00;
+ 6f6:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <disp+0x3>
+brightness():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:175
+    displayByte(lastData);
+}
+
+void GyverTM1637::brightness(uint8_t brightness, uint8_t SetData, uint8_t SetAddr)
+{
+    Cmd_SetData = SetData;
+ 6fa:	80 e4       	ldi	r24, 0x40	; 64
+ 6fc:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <disp+0x4>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:176
+    Cmd_SetAddr = SetAddr;
+ 700:	80 ec       	ldi	r24, 0xC0	; 192
+ 702:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <disp+0x5>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:177
+    Cmd_DispCtrl = 0x88 + brightness;//Set the brightness and it takes effect the next time it displays.
+ 706:	8f e8       	ldi	r24, 0x8F	; 143
+ 708:	80 93 82 00 	sts	0x0082, r24	; 0x800082 <disp+0x6>
+update():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:170
+    lastData[2] = 0x00;
+    lastData[3] = 0x00;
+}
+void GyverTM1637::update(void)
+{
+    displayByte(lastData);
+ 70c:	8c e7       	ldi	r24, 0x7C	; 124
+ 70e:	90 e0       	ldi	r25, 0x00	; 0
+ 710:	08 de       	rcall	.-1008   	; 0x322 <GyverTM1637::displayByte(unsigned char*) [clone .constprop.8]>
+ 712:	ff cf       	rjmp	.-2      	; 0x712 <main+0x6a>
+
+00000714 <_GLOBAL__sub_I_myTimer1>:
+_GLOBAL__sub_I_myTimer1():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:917
+	uint8_t bt1 = _Seconds / 60 % 10;
+	uint8_t bt2 = (_Seconds - 60 * bt1 - 600 * bt0) / 10 % 10;
+	uint8_t bt3 = _Seconds % 10;
+	
+	disp.display(bt0, bt1, bt2, bt3); //GyverTM1637 MM:SS
+ 714:	cf 93       	push	r28
+ 716:	df 93       	push	r29
+__base_ctor ():
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:10
+    0x7f, 0x6f, 0x00, 0x40
+};//0~9, ,-
+
+GyverTM1637::GyverTM1637(uint8_t clk, uint8_t dio)
+{
+    Clkpin = clk;
+ 718:	cc e7       	ldi	r28, 0x7C	; 124
+ 71a:	d0 e0       	ldi	r29, 0x00	; 0
+ 71c:	84 e0       	ldi	r24, 0x04	; 4
+ 71e:	88 87       	std	Y+8, r24	; 0x08
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:11
+    Datapin = dio;
+ 720:	85 e0       	ldi	r24, 0x05	; 5
+ 722:	89 87       	std	Y+9, r24	; 0x09
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:12
+    pinMode(Clkpin, OUTPUT);
+ 724:	61 e0       	ldi	r22, 0x01	; 1
+ 726:	84 e0       	ldi	r24, 0x04	; 4
+ 728:	4e dd       	rcall	.-1380   	; 0x1c6 <pinMode>
+E:\SCIENSE\ARDUINO\A_My_Skech\libraries\GyverTM1637\src/GyverTM1637.cpp:13
+    pinMode(Datapin, OUTPUT);
+ 72a:	61 e0       	ldi	r22, 0x01	; 1
+ 72c:	89 85       	ldd	r24, Y+9	; 0x09
+ 72e:	4b dd       	rcall	.-1386   	; 0x1c6 <pinMode>
+__static_initialization_and_destruction_0():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:792
+uint16_t period1 = 100, period2 = HalfTimePeriod, alarmCount, myPreDiv= PREDIV;
+//Библиотека дисплея стартуем
+GyverTM1637 disp(CLK, DIO);
+//Всякие переменные
+uint16_t timeLeft=0;
+uint8_t const countExitDefault = DelayOnStart * 1000 / period1;
+ 730:	88 e2       	ldi	r24, 0x28	; 40
+ 732:	80 93 7b 00 	sts	0x007B, r24	; 0x80007b <countExitDefault>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:793
+uint8_t const countAlarmDefault = AlarmDur * 1000 / period1;
+ 736:	92 e3       	ldi	r25, 0x32	; 50
+ 738:	90 93 7a 00 	sts	0x007A, r25	; 0x80007a <countAlarmDefault>
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:794
+uint8_t countExit = countExitDefault;							//countExit == countExitDefault - условие входа (начала работы)
+ 73c:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <countExit>
+_GLOBAL__sub_I_myTimer1():
+E:\SCIENSE\ATTiny2313\PROJECTS\Timer/Timer.ino:917
+	uint8_t bt1 = _Seconds / 60 % 10;
+	uint8_t bt2 = (_Seconds - 60 * bt1 - 600 * bt0) / 10 % 10;
+	uint8_t bt3 = _Seconds % 10;
+	
+	disp.display(bt0, bt1, bt2, bt3); //GyverTM1637 MM:SS
+ 740:	df 91       	pop	r29
+ 742:	cf 91       	pop	r28
+ 744:	08 95       	ret
+
+00000746 <__mulhi3>:
+__mulhi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ 746:	00 24       	eor	r0, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ 748:	55 27       	eor	r21, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ 74a:	04 c0       	rjmp	.+8      	; 0x754 <__mulhi3+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ 74c:	08 0e       	add	r0, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ 74e:	59 1f       	adc	r21, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ 750:	88 0f       	add	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ 752:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ 754:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ 756:	29 f0       	breq	.+10     	; 0x762 <__mulhi3+0x1c>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ 758:	76 95       	lsr	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ 75a:	67 95       	ror	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ 75c:	b8 f3       	brcs	.-18     	; 0x74c <__mulhi3+0x6>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ 75e:	71 05       	cpc	r23, r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ 760:	b9 f7       	brne	.-18     	; 0x750 <__mulhi3+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ 762:	80 2d       	mov	r24, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ 764:	95 2f       	mov	r25, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ 766:	08 95       	ret
+
+00000768 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ 768:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ 76a:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ 76c:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ 76e:	07 c0       	rjmp	.+14     	; 0x77e <__udivmodhi4_ep>
+
+00000770 <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ 770:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ 772:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ 774:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ 776:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ 778:	10 f0       	brcs	.+4      	; 0x77e <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ 77a:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ 77c:	b7 0b       	sbc	r27, r23
+
+0000077e <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ 77e:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ 780:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ 782:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ 784:	a9 f7       	brne	.-22     	; 0x770 <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ 786:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ 788:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ 78a:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ 78c:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ 78e:	08 95       	ret
+
+00000790 <__tablejump2__>:
+__tablejump2__():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ 790:	ee 0f       	add	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ 792:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ 794:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ 796:	f4 91       	lpm	r31, Z
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ 798:	e0 2d       	mov	r30, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ 79a:	09 94       	ijmp
+
+0000079c <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 79c:	f8 94       	cli
+
+0000079e <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 79e:	ff cf       	rjmp	.-2      	; 0x79e <__stop_program>
