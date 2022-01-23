@@ -17,7 +17,9 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
+#[Dd]ebug/
+[Dd]ebug/GyverTM1637/
+[Dd]ebug/VM_DBG
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
