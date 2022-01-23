@@ -22,6 +22,7 @@
 #define ARDUINO 108013
 #define ARDUINO_AVR_ATTINYX313
 #define ARDUINO_ARCH_AVR
+#define DISABLEMILLIS
 #define NEOPIXELPORT PORTA
 #define __cplusplus 201103L
 #define _Pragma(x)
