@@ -825,6 +825,7 @@ ISR(TIMER0_COMPA_vect) {
 	}
 }
 
+
 void InitialTIMER0() {
 	// Timer/Counter 0 initialization
 	//Частота прерываний будет = Fclk / (2 * N * (1 + OCR0A)) / 2    где N - коэф. предделителя (1, 8, 64, 256 или 1024)
