@@ -15,7 +15,7 @@
 #define DIO 5			//пин 7-ми сегментного индикатора
 #define AlarmDur 5		//Время работы звонка в секундах
 #define DelayOnStart 4 //Время задержки пуска (при вводе времени) в секундах 4
-#define HalfTimePeriod 5 //500мС Половина секунды в миллисекундах (можно уменьшать для теста 100мС например)
+#define HalfTimePeriod 5 //5 = 500мС Половина секунды в миллисекундах (можно уменьшать для теста 100мС например)
 
 #pragma region MyRegion
 
@@ -794,7 +794,6 @@ uint8_t const countAlarmDefault = AlarmDur * 1000 / period1;
 uint8_t countExit = countExitDefault;							//countExit == countExitDefault - условие входа (начала работы)
 bool flagIsPress, flagPoint = true;		//flagIsPress - флаг того что кнопка удерживается, flagPoint - двоеточие или точка на экране
 bool flagKey1Pressed, flagKey10Pressed;
-bool f;
 
 
 // the setup function runs once when you press reset or power the board
@@ -808,21 +807,7 @@ void setup() {
 	disp.brightness(7);  // яркость, 0 - 7 (минимум - максимум)
 }
 
-// the loop function runs over and over again until power down or reset
 void loop() {
-
-
-
-	//if (millis() - myTimer1 >= period1) {   // ищем разницу 
-		//myTimer1 += period1;                  // сброс счётчика
-		// выполнить действие 1
-		//PeriodForSet();
-	//}
-	//if (millis() - myTimer2 >= period2) {   // ищем разницу 
-		//myTimer2 += period2;                  // сброс счётчика
-		// выполнить действие 2
-		//PeriodForTime();
-	//}
 }
 
 ISR(TIMER0_COMPA_vect) {
@@ -836,8 +821,6 @@ ISR(TIMER0_COMPA_vect) {
 		if (period2 == 0) {
 			period2 = HalfTimePeriod;
 			PeriodForTime();
-			/*f = !f;
-			digitalWrite(ALARM_PINOUT, f);*/
 		}
 	}
 }
@@ -932,8 +915,3 @@ void DisplayTime(uint16_t _Seconds) //Моя функция переработки общих секунд в МИН
 	
 	disp.display(bt0, bt1, bt2, bt3); //GyverTM1637 MM:SS
 }
-
-
-
-
-
